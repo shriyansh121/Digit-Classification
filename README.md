@@ -5,7 +5,7 @@ This repository consist of image processing code of digit classification. Here t
 
 LeNet is a convolutional neural network (CNN) architecture that was developed by Yann LeCun and his colleagues in 1989. This architecture played a crucial role in demonstrating the potential of neural networks for image recognition tasks, especially in reading handwritten digits and characters. LeNet is considered one of the earliest examples of CNNs, which are now foundational to many modern artificial intelligence (AI) applications in image and video analysis. 
 
-![Alt text](<lesnet%20archi.webp> "Optional title")
+![LeNet Architecture](<lesnet%20archi.webp> "LeNet Architecture")
 
 
 The structure of LeNet consists of multiple layers designed to automatically and efficiently recognize patterns in images. The network typically includes two sets of convolutional and pooling (sub-sampling) layers followed by fully connected layers. Convolutional layers apply various filters to the input images to create feature maps that summarize key features such as edges and shapes. Pooling layers then reduce the dimensions of these feature maps to make the processing more manageable and to help the network focus on the most important features. Finally, the fully connected layers compute the final classifications, such as identifying which digit is present in an image.
@@ -65,3 +65,21 @@ where
 LeNet was specifically designed to recognize handwritten postal codes on mail for automated sorting systems, a task at which it excelled. Its success showcased the practical applicability of neural networks in real-world tasks and inspired sfurther research and development in the field of deep learning.
 
 The usage of LeNet has historically been a stepping stone to more complex and capable neural network architectures. Although modern networks like AlexNet, VGG, and ResNet have largely surpassed LeNet in performance, yet LeNet’s basic principles and design continue to influence the development of new neural network architectures today. LeNet serves as an educational tool for deep learning, providing a manageable yet illustrative example of how deep learning can be structured and implemented.
+
+## Result of Digit Classification using ResNet
+
+<img src="heatmap%20lesnet.png" alt="Heatmap LeNet" width="500" height="400">
+
+
+## Result of Digit Classification using Single Layer ANN
+
+<img src="single layer.png" alt="Single Layer ANN" width="500" height="400">
+
+
+## Result of Digit Classification using Multi Layer Ann
+
+<img src="multilayer.png" alt="Multilayer ANN" width="500" height="400">
+
+## Comparision of Result
+
+The LeNet architecture, achieved a 99% accuracy rate, significantly outperfroming the other models in digit classification. This high accuracy underscores LeNet's sophisticated convolutional layers, which are especially adept at recognizing spatial hierarchies in images, making it highly effective for image-based tasks. In contrast, a single-layer artificial neural network (ANN) has the lowest accuracy at 92.65%. Its simple architecture struggles with the complexity of image data, lacking the depth required for capturing detailed patterns. The multi-layer ANN, with an accuracy of 97.78%, shows improvement over the single-layer due to its additional layers which allow for a more nuanced understanding of the image features, but still falls short of the convolutional capabilities of LeNet. These comparisons illustrate the importance of model architecture in handling intricate tasks like image recognition.
